@@ -20,7 +20,7 @@ __declspec(dllexport) LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARA
                 if (pMouseStruct != NULL) {
                     if (pMouseStruct->pt.x <= 0 && pMouseStruct->pt.y <= 0) {
                         numberOfTriggers++;
-                        printf("Mouse is in the top left corner of the screen %d.\n", numberOfTriggers);
+                        //printf("Mouse is in the top left corner of the screen %d.\n", numberOfTriggers);
                         #include <windows.h>
 
                         // Inside your function where you want to get the current time
@@ -40,9 +40,9 @@ __declspec(dllexport) LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARA
                         lastElapsedTime = currentElapsedTime;
 
 
-                        printf("Interval time : %.3lf ms.\n", intervalTime);
+                        //printf("Interval time : %.3lf ms.\n", intervalTime); // Print the time between two calls
                         if (intervalTime > minIntervalTime) {
-                            printf("Interval time is more than 1000 ms.\n");
+                            //printf("Interval time is more than 1000 ms.\n");
                             // Do something here
                             keybd_event(VK_LWIN, 0, 0, 0); // Press the left Windows key
                             keybd_event(VK_TAB, 0, 0, 0); // Press the Tab key
