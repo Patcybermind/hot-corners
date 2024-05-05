@@ -18,7 +18,7 @@ __declspec(dllexport) LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARA
             {
                 MOUSEHOOKSTRUCT * pMouseStruct = (MOUSEHOOKSTRUCT *)lParam;
                 if (pMouseStruct != NULL) {
-                    if (pMouseStruct->pt.x <= 0 && pMouseStruct->pt.y <= 0) {
+                    if (pMouseStruct->pt.x <= 0 && pMouseStruct->pt.y <= 0) { // Top left corner but you could change the corner
                         numberOfTriggers++;
                         //printf("Mouse is in the top left corner of the screen %d.\n", numberOfTriggers);
                         #include <windows.h>
