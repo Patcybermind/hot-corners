@@ -4,3 +4,4 @@ its a bit like what gnome has because thats what inspired it, you can set the .e
 there are alternatives but i couldnt get them to work
 
 if you are going to edit this and then compile it yourself you should compilte it with : 'gcc -o hot-corners hot-corners.c -mwindows'
+that will let gcc know that its a 'gui app' preventing it from opening a cmd prompt window
