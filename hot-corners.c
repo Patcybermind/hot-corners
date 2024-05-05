@@ -7,7 +7,7 @@
 double currentElapsedTime = 0;
 double lastElapsedTime = 0;
 double intervalTime = 0;
-double minIntervalTime = 500; // 500 ms
+double minIntervalTime = 800; // ms
 
 HHOOK hMouseHook;
 int numberOfTriggers = 0;
